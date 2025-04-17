@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>性格診断テスト</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>性格診断テスト</h1>
+    <div id="questionBox">
+      <p id="question">質問がここに表示されます</p>
+      <button onclick="answer(true)">はい</button>
+      <button onclick="answer(false)">いいえ</button>
+    </div>
+    <div id="resultBox" style="display:none;">
+      <h2>診断結果</h2>
+      <p id="resultText"></p>
+      <button onclick="restart()">もう一度やる</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
